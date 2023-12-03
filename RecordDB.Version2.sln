@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordDB", "RecordDB\RecordDB.csproj", "{56D51358-56DC-4603-86F4-1E0A4BB6DD11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordDAL", "RecordDAL\RecordDAL.csproj", "{B5738895-2BB3-44C6-BA46-0BB2DA3CD41F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordTest", "RecordTest\RecordTest.csproj", "{769FE554-CE45-40CD-9B49-0B6939D2F325}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56D51358-56DC-4603-86F4-1E0A4BB6DD11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D51358-56DC-4603-86F4-1E0A4BB6DD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D51358-56DC-4603-86F4-1E0A4BB6DD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D51358-56DC-4603-86F4-1E0A4BB6DD11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5738895-2BB3-44C6-BA46-0BB2DA3CD41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5738895-2BB3-44C6-BA46-0BB2DA3CD41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5738895-2BB3-44C6-BA46-0BB2DA3CD41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5738895-2BB3-44C6-BA46-0BB2DA3CD41F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{769FE554-CE45-40CD-9B49-0B6939D2F325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{769FE554-CE45-40CD-9B49-0B6939D2F325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{769FE554-CE45-40CD-9B49-0B6939D2F325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{769FE554-CE45-40CD-9B49-0B6939D2F325}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D78E4B7-5234-48DB-88EB-27DF6E4E99ED}
+	EndGlobalSection
+EndGlobal
