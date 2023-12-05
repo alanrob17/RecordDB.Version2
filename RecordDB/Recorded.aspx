@@ -15,7 +15,7 @@
     <div class="col-xs-10 col-md-6 center-block">
         <h2 class="headerLabel">RecordDB Management System</h2>
           <h3 class="dateLabel"><asp:label ID="dateLabel" runat="server"></asp:label></h3>
-          <h4 class="clockFace"><asp:TextBox ID="textClock" Width="120px" BorderStyle="None" ForeColor="#000099" Font="Bold" runat="server"></asp:TextBox></h4>
+          <h4 class="clockFace"><asp:TextBox ID="textClock" Width="120px" CssClass="no-border" ForeColor="#2780e3" Font="Bold" runat="server"></asp:TextBox></h4>
       <br/>
       <p> <span id="date"></span></p> 
     </div>
@@ -24,11 +24,11 @@
     <div class="col-xs-6 col-md-4 center-block">
       <div class="panel panel-primary">
         <div class="panel-heading">
-          <h3 class="panel-title">Show Albums Recorded by Year</h3>
+          <h3 class="headerLabel">Albums Recorded by Year</h3>
         </div>
         <div class="panel-body">
           <div class="form-group">
-            <label for="yearTextBox">Year</label>
+            <label for="yearTextBox" class="mt-3 mb-2 fw-bold">Year</label>
             <div class="input-group">
               <asp:TextBox ID="yearTextBox" runat="server"
                 TextMode="SingleLine"
@@ -55,7 +55,7 @@
         <div class="panel-footer clearfix">
           <asp:Button ID="submitButton" runat="server"
             Text="Submit"
-            CssClass="btn btn-primary"
+            CssClass="btn btn-primary mt-2"
             title="Submit"
             OnClick="submitButton_Click" />
         </div>
@@ -85,7 +85,7 @@
                   newtime = newtime.replace(":", ":0");
               }
               document.getElementById('<%= textClock.ClientID %>').value = newtime;
-              window.setTimeout("ShowTime()", 500);
+              window.setTimeout("ShowTime()", 100);
           }
           function runCode() {
               window.setTimeout("ShowTime()", 1000);

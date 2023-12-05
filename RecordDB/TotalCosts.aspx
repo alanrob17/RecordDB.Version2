@@ -4,7 +4,7 @@
     <div class="col-xs-12 col-md-6 center-block">
         <h2 class="headerLabel">RecordDB Management System</h2>
           <h3 class="dateLabel"><asp:label ID="dateLabel" runat="server"></asp:label></h3>
-          <h4 class="clockFace"><asp:TextBox ID="textClock" Width="120px" BorderStyle="None" ForeColor="#000099" Font="Bold" runat="server"></asp:TextBox></h4>
+          <h4 class="clockFace"><asp:TextBox ID="textClock" Width="120px" CssClass="no-border" ForeColor="#2780e3" Font="Bold" runat="server"></asp:TextBox></h4>
       
       <p> <span id="date"></span></p> 
         </div>
@@ -14,13 +14,13 @@
         <div class="table-responsive">
          <asp:GridView ID="totalsGridView" Width="25%" HorizontalAlign="Center" CssClass="table table-striped table-bordered" AutoGenerateColumns="False" AllowPaging="True" PageSize="30"  DataSourceID="totalsDataSource" runat="server">
             <Columns>
-               <asp:BoundField DataField="Name" HtmlEncode="False" HeaderText="Artist Name">
+               <asp:BoundField DataField="Name" HtmlEncode="False" HeaderStyle-CssClass="colour-header" HeaderText="Artist Name">
                    <HeaderStyle Width="50%"></HeaderStyle>
                </asp:BoundField>
-               <asp:BoundField DataField="TotalDiscs" HtmlEncode="False" HeaderText="Total Discs">
+               <asp:BoundField DataField="TotalDiscs" HtmlEncode="False" HeaderStyle-CssClass="colour-header" HeaderText="Total Discs">
                    <HeaderStyle Width="25%"></HeaderStyle>
                </asp:BoundField>
-               <asp:BoundField DataField="TotalCost" HtmlEncode="False" HeaderText="Total Cost" DataFormatString="{0:c}">
+               <asp:BoundField DataField="TotalCost" HtmlEncode="False" HeaderStyle-CssClass="colour-header" HeaderText="Total Cost" DataFormatString="{0:c}">
                    <HeaderStyle Width="25%"></HeaderStyle>
                </asp:BoundField>
             </Columns>             
@@ -62,7 +62,7 @@
                   newtime = newtime.replace(":", ":0");
               }
               document.getElementById('<%= textClock.ClientID %>').value = newtime;
-              window.setTimeout("ShowTime()", 500);
+              window.setTimeout("ShowTime()", 100);
           }
 
           function runCode() {

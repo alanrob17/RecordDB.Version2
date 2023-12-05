@@ -18,7 +18,7 @@
                            <td colspan="2"><h2><%# Eval("ArtistName") %></h2><br/></td>
                        </tr>
                        <tr>
-                           <td colspan="2"><h3><%# Eval("Name ") %></h3><br/></td>
+                           <td colspan="2"><h3 class="headerLabel"><%# Eval("Name ") %></h3><br/></td>
                        </tr>
                        <tr>
                            <td colspan="2"><input type="button" class="btn btn-primary" id="biographyButton" value="Biography:" />
@@ -99,7 +99,7 @@
                 newtime = newtime.replace(":", ":0");
             }
             document.getElementById('<%= textClock.ClientID %>').value = newtime;
-            window.setTimeout("ShowTime()", 500);
+            window.setTimeout("ShowTime()", 100);
         }
         function runCode() {
             window.setTimeout("ShowTime()", 1000);

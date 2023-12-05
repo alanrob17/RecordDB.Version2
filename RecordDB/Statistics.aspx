@@ -7,7 +7,7 @@
             <h3 class="dateLabel">
                 <asp:Label ID="dateLabel" runat="server"></asp:Label></h3>
             <h4 class="clockFace">
-                <asp:TextBox ID="textClock" Width="120px" BorderStyle="None" ForeColor="#000099" Font="Bold" runat="server"></asp:TextBox></h4>
+                <asp:TextBox ID="textClock" Width="120px" CssClass="no-border" ForeColor="#2780e3" Font="Bold" runat="server"></asp:TextBox></h4>
 
             <p><span id="date"></span></p>
         </div>
@@ -16,11 +16,11 @@
         <div class="col-xs-12 col-md-4 center-block">
 
             <div class="table-responsive">
-                <table class="table table-hover table-bordered">
+                <table class="table table-hover table-bordered colour-header">
                     <thead>
                         <tr>
-                            <th>Statistics</th>
-                            <th>Total</th>
+                            <th class="colour-header">Statistics</th>
+                            <th class="colour-header">Total</th>
                         </tr>
                     </thead>
                     <tr>
@@ -276,7 +276,7 @@
                   newtime = newtime.replace(":", ":0");
               }
               document.getElementById('<%= textClock.ClientID %>').value = newtime;
-              window.setTimeout("ShowTime()", 500);
+              window.setTimeout("ShowTime()", 100);
           }
 
           function runCode() {

@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="RecordDB._Default" %>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
         <div class="col-xs-10 col-md-6 center-block">
@@ -6,7 +7,7 @@
             <h3 class="dateLabel">
                 <asp:Label ID="dateLabel" runat="server"></asp:Label></h3>
             <h4 class="clockFace">
-                <asp:TextBox ID="textClock" Width="120px" BorderStyle="None" ForeColor="#2780e3" Font="Bold" runat="server"></asp:TextBox></h4>
+                <asp:TextBox ID="textClock" Width="120px" CssClass="no-border" ForeColor="#2780e3" Font="Bold" runat="server"></asp:TextBox></h4>
             <p><span id="date"></span></p>
         </div>
     </div>
@@ -206,7 +207,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <h4>Connected to local SQL Server database.</h4>
+                <h4 id="database">Connected to local SQL Server database.</h4>
                 <asp:Label ID="yearLabel" runat="server"></asp:Label><br />
                 <br />
             </div>
@@ -216,7 +217,6 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="EndOfPageContent" runat="server">
     <script type="text/javascript">
-
         var yr = new Date();
         var year = yr.getFullYear();
 
@@ -225,26 +225,38 @@
             var hours = dt.getHours();
 
             var part = "am";
-            if (hours > 12) {
-                hours -= 12;
+            if (hours >= 12) {
+                if (hours > 12) {
+                    hours -= 12;
+                }
                 part = "pm";
             }
+
+            // Adjust for midnight
+            if (hours === 0) {
+                hours = 12;
+            }
+
             var newtime = +hours + ":" + dt.getMinutes() + part;
             if (dt.getMinutes() < 10) {
                 newtime = newtime.replace(":", ":0");
             }
             document.getElementById('<%= textClock.ClientID %>').value = newtime;
-            window.setTimeout("ShowTime()", 500);
+            window.setTimeout(ShowTime, 100);
         }
+
         function runCode() {
-            window.setTimeout("ShowTime()", 1000);
+            window.setTimeout(ShowTime, 1000);
         }
-        $('div.row').hide().fadeIn(1000);
-        $('#<%=yearLabel.ClientID %>').html('&copy; Alan Robson ' + year);
-        $('h2.headerLabel').css('text-align', 'center');
-        $('h3.dateLabel').css('text-align', 'center');
-        $('h4.clockFace').css('text-align', 'center');
-        $('#<%=textClock.ClientID %>').css('text-align', 'center');
-        runCode();
+
+        $(document).ready(function () {
+            $('div.row').hide().fadeIn(1000);
+            $('#<%=yearLabel.ClientID %>').html('&copy; Alan Robson ' + year);
+            $('h2.headerLabel').css('text-align', 'center');
+            $('h3.dateLabel').css('text-align', 'center');
+            $('h4.clockFace').css('text-align', 'center');
+            $('#<%=textClock.ClientID %>').css('text-align', 'center');
+            runCode();
+        });
     </script>
 </asp:Content>

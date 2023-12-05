@@ -12,7 +12,7 @@
             newtime = newtime.replace(":", ":0");
         }
         document.getElementById('<%= textClock.ClientID %>').value = newtime;
-        window.setTimeout("ShowTime()", 500);
+        window.setTimeout("ShowTime()", 100);
     }
 
     function runCode() {

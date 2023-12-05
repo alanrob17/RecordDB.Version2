@@ -1,5 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ArtistList.aspx.cs" Inherits="RecordDB.ArtistList" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+        <div class="row">
+            <div class="col-xs-6 col-md-4 center-block">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="headerLabel">Artist List</h3>
+                    </div>
+                </div>
+            </div>
         <div class="table-responsive">
          <asp:GridView ID="artistGridView" CssClass="table table-striped table-bordered" AutoGenerateColumns="False" AllowPaging="True" PageSize="30"  DataSourceID="artistObjectDataSource" runat="server">
             <Columns>

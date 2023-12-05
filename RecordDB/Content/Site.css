@@ -11,10 +11,10 @@ body {
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
-input[type="text"],
+/*input[type="text"],
 input[type="password"] {
     max-width: 280px;
-}
+}*/
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -29,7 +29,7 @@ input[type="password"] {
 
 .container {
     width: 95%;
-    margin-top: .5em;
+    margin-top: 4em;
 }
 
 .productBlock {
@@ -40,4 +40,43 @@ input[type="password"] {
 
 .productNameTitle {
     font-size: x-large;
+}
+
+h2.headerLabel, h3.dateLabel, h4#MainContent_textClock {
+    color: #2780e3;
+}
+
+h3.dateLabel {
+    font-size: 1.8em;
+}
+
+h4.clockFace {
+    font-size: 1.5em;
+}
+
+.no-border {
+    border: none;
+    outline: none;
+}
+
+.no-border:focus {
+    border: 1px solid #fff; /* Add a border for focused state */
+}
+
+#database {
+    color: #2780e3;
+    font-size: 1.0em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3.headerLabel {
+    color: #1d60aa;
+}
+
+th.colour-header {
+    background-color: #2780e3;
+    color: #fff;
 }
