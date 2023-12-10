@@ -4,7 +4,7 @@
     <div class="col-xs-12 col-md-6 center-block">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <div class="panel-title">&nbsp;<strong>Update Record</strong></div>
+          <div class="headerLabel">Update Record</div>
         </div>
         <div class="panel-body">
           <div class="form-horizontal">
@@ -13,7 +13,7 @@
                 Select Artist:</label>
               <div class="col-md-8">
                 <asp:DropDownList ID="artistDropDownList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="artistDropDownList_SelectedIndexChanged"
-                  CssClass="form-control"
+                  CssClass="form-control rounded-3"
                   title="Select Artist"></asp:DropDownList>
               </div>
             </div>
@@ -24,7 +24,7 @@
               <div class="col-md-8">
                 <asp:DropDownList ID="recordDropDownList" runat="server" AutoPostBack="True" 
 				  OnSelectedIndexChanged="recordDropDownList_SelectedIndexChanged"
-                  CssClass="form-control"
+                  CssClass="form-control rounded-3"
                   title="Select Record"></asp:DropDownList>
               </div>                
             </div>
@@ -39,7 +39,7 @@
                 <strong>Title</strong></label>
               <div class="col-md-8">
                 <asp:TextBox ID="nameTextBox" runat="server"
-                  CssClass="form-control"
+                  CssClass="form-control rounded-3"
                   title="Title"
                   autofocus="autofocus"></asp:TextBox>
               </div>
@@ -48,12 +48,12 @@
               <label for="fieldDropDownList" class="control-label col-md-2">Field</label>
               <div class="col-md-4">
                 <asp:DropDownList ID="fieldDropDownList" runat="server"				  
-                  CssClass="form-control"></asp:DropDownList>
+                  CssClass="form-control rounded-3"></asp:DropDownList>
               </div>
               <label for="recordedTextBox" class="control-label col-md-2">Recorded</label>
               <div class="col-md-4">
                 <asp:TextBox ID="recordedTextBox" runat="server"
-                  CssClass="form-control"
+                  CssClass="form-control rounded-3"
                   title="Recorded"></asp:TextBox>
               </div>
             </div>
@@ -61,37 +61,37 @@
               <label for="labelTextBox" class="control-label col-md-2">Label</label>
               <div class="col-md-4">
                 <asp:TextBox ID="labelTextBox" runat="server"
-                  CssClass="form-control"
+                  CssClass="form-control rounded-3"
                   title="Label"></asp:TextBox>
               </div>
               <label for="pressingDropDownList" class="control-label col-md-2">Pressing</label>
               <div class="col-md-4">
                <asp:DropDownList ID="pressingDropDownList" runat="server"				  
-                  CssClass="form-control"></asp:DropDownList>
+                  CssClass="form-control rounded-3"></asp:DropDownList>
               </div>
             </div>
             <div class="form-group">
               <label for="ratingDropDownList" class="control-label col-md-2">Rating</label>
               <div class="col-md-4">
                <asp:DropDownList ID="ratingDropDownList" runat="server"				  
-                  CssClass="form-control"></asp:DropDownList>
+                  CssClass="form-control rounded-3"></asp:DropDownList>
               </div>
               <label for="discsDropDownList" class="control-label col-md-2">Discs</label>
               <div class="col-md-4">
                <asp:DropDownList ID="discsDropDownList" runat="server"				  
-                  CssClass="form-control"></asp:DropDownList>
+                  CssClass="form-control rounded-3"></asp:DropDownList>
               </div>
             </div>
            <div class="form-group">
               <label for="mediaDropDownList" class="control-label col-md-2">Media</label>
               <div class="col-md-4">
                <asp:DropDownList ID="mediaDropDownList" runat="server"				  
-                  CssClass="form-control"></asp:DropDownList>
+                  CssClass="form-control rounded-3"></asp:DropDownList>
               </div>
               <label for="boughtTextBox" class="control-label col-md-2">Bought</label>
               <div class="col-md-4">
                 <asp:TextBox ID="boughtTextBox" runat="server"
-                  CssClass="form-control"
+                  CssClass="form-control rounded-3"
                   title="Bought"></asp:TextBox>
               </div>
             </div>
@@ -100,7 +100,7 @@
                 <strong>Cost</strong></label>
               <div class="col-md-8">
                 <asp:TextBox ID="costTextBox" runat="server"
-                  CssClass="form-control"
+                  CssClass="form-control rounded-3"
                   title="Cost"></asp:TextBox>
               </div>
             </div>
@@ -109,7 +109,7 @@
                 <strong>Cover Name</strong></label>
               <div class="col-md-8">
                 <asp:TextBox ID="coverNameTextBox" runat="server"
-                  CssClass="form-control"
+                  CssClass="form-control rounded-3"
                   title="Cover Name"></asp:TextBox>
               </div>
             </div>
@@ -119,8 +119,8 @@
               <div class="col-md-10">
                 <asp:TextBox ID="reviewTextBox" runat="server"
                     TextMode="MultiLine"
-                    CssClass="form-control"
-                    Height="260px"
+                    CssClass="form-control rounded-3"
+                    Height="360px"
                     title="Review"></asp:TextBox>
               </div>
             </div>

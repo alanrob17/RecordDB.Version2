@@ -4,7 +4,7 @@
     <div class="col-xs-12 col-md-6 center-block">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title glyphicon-star">&nbsp;<strong>Delete Record</strong></h3>
+          <h3 class="headerLabel">Delete Record</h3>
         </div>
         <div class="panel-body">
           <div class="form-horizontal">

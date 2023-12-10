@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" Async="true" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddArtist.aspx.cs" Inherits="RecordDB.AddArtist" ValidateRequest="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-      <div class="row">
+<%--      <div class="row">
     <div class="col-xs-12 col-md-6 center-block">
         <h2 class="headerLabel">RecordDB Management System</h2>
           <h3 class="dateLabel"><asp:label ID="dateLabel" runat="server"></asp:label></h3>
@@ -8,7 +8,7 @@
       <br/>
       <p> <span id="date"></span></p> 
     </div>
-  </div>
+  </div>--%>
 <div class="row">
     <div class="col-xs-12 col-md-6 center-block">
       <div class="panel panel-default">
@@ -22,7 +22,7 @@
                 <strong>First Name:</strong>
             </label>
             <div class="col-xs-12">
-                <asp:TextBox ID="firstNameTextBox" runat="server" Width="100%" CssClass="form-control" title="First Name" autofocus="autofocus"></asp:TextBox>
+                <asp:TextBox ID="firstNameTextBox" runat="server" Width="100%" CssClass="form-control rounded-3" title="First Name" autofocus="autofocus"></asp:TextBox>
             </div>
         </div>
         <div class="form-group">
@@ -30,7 +30,7 @@
                 <strong>Last Name:</strong>
             </label>
             <div class="col-xs-12">
-                <asp:TextBox ID="lastNameTextBox" runat="server" Width="100%" CssClass="form-control" title="Last Name"></asp:TextBox>
+                <asp:TextBox ID="lastNameTextBox" runat="server" Width="100%" CssClass="form-control rounded-3" title="Last Name"></asp:TextBox>
             </div>
         </div>
         <div class="form-group">
@@ -38,13 +38,13 @@
                 <strong>Biography:</strong>
             </label>
             <div class="col-md-12">
-                <asp:TextBox ID="biographyTextBox" runat="server" TextMode="MultiLine" CssClass="form-control" Height="260px" title="Biography"></asp:TextBox>
+                <asp:TextBox ID="biographyTextBox" runat="server" TextMode="MultiLine" CssClass="form-control rounded-3" Height="260px" title="Biography"></asp:TextBox>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
                 <div id="divMessageArea" runat="server" visible="false">
-                    <div class="well">
+                    <div class="well p-4 mt-2 mb-1">
                         <asp:Label ID="messageLabel" runat="server" CssClass="text-warning" Text="Area to display messages." />
                     </div>
                 </div>
@@ -78,7 +78,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="EndOfPageContent" runat="server">
       <script type="text/javascript">
 
-          var yr = new Date();
+<%--          var yr = new Date();
           var year = yr.getFullYear();
 
           function ShowTime() {
@@ -108,6 +108,6 @@
           $('h4.clockFace').css('text-align', 'center');
           $('#<%=textClock.ClientID %>').css('text-align', 'center');
           runCode();
-
+--%>
       </script>        
 </asp:Content>

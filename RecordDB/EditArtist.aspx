@@ -4,65 +4,65 @@
     <div class="col-xs-12 col-md-6 center-block">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <div class="panel-title">&nbsp;<strong>Update Artist</strong></div>
+          <h3 class="headerLabel">Update Artist</h3>
         </div>
         <div class="panel-body">
           <div class="form-horizontal">
             <div class="form-group">
-              <label for="artistDropDownList" class="control-label col-md-2">
-                Select Artist:</label>
+              <label for="artistDropDownList" class="control-label col-md-2 mt-3 mb-2">
+                <strong>Select Artist:</strong></label>
               <div class="col-md-8">
                 <asp:DropDownList ID="artistDropDownList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="artistDropDownList_SelectedIndexChanged"
-                  CssClass="form-control"
+                  CssClass="form-control rounded-3"
                   title="Select Artist"></asp:DropDownList>
               </div>
             </div>
             <asp:Panel ID="editPanel" runat="server">
             <div class="form-group">
               <label class="control-label col-md-4">
-                <strong>Edit Artist</strong></label>
+                <strong></strong></label>
             </div>
             <div class="form-group">
-              <label for="firstNameTextBox" class="control-label col-md-2">
+              <label for="firstNameTextBox" class="control-label col-md-2 mt-3 mb-2">
                 <strong>First Name:</strong></label>
               <div class="col-md-10">
                 <asp:TextBox ID="firstNameTextBox" runat="server"
-                  CssClass="form-control"
+                  CssClass="form-control rounded-3"
                   title="First Name"
                   autofocus="autofocus"></asp:TextBox>
               </div>
             </div>
             <div class="form-group">
-              <label for="lastNameTextBox" class="control-label col-md-2">
+              <label for="lastNameTextBox" class="control-label col-md-2 mt-3 mb-2">
                 <strong>Last Name:</strong></label>
               <div class="col-md-10">
                 <asp:TextBox ID="lastNameTextBox" runat="server"
-                  CssClass="form-control" 
+                  CssClass="form-control rounded-3" 
                   title="Last Name"></asp:TextBox>
               </div>
             </div>
             <div class="form-group">
-              <label for="nameTextBox" class="control-label col-md-2">
+              <label for="nameTextBox" class="control-label col-md-2 mt-3 mb-2">
                 <strong>Full Name:</strong></label>
               <div class="col-md-10">
                 <asp:TextBox ID="nameTextBox" runat="server"
-                  CssClass="form-control"
+                  CssClass="form-control rounded-3"
                   title="Full Name"></asp:TextBox>
               </div>
             </div>
             <div class="form-group">
-              <label for="biographyTextBox" class="control-label col-md-2">
+              <label for="biographyTextBox" class="control-label col-md-2 mt-3 mb-2">
                 <strong>Biography:</strong></label>
               <div class="col-md-12">
                 <asp:TextBox ID="biographyTextBox" runat="server"
                     TextMode="MultiLine"
-                  CssClass="form-control"
+                  CssClass="form-control rounded-3"
                     Height="360px"
                   title="Biography"></asp:TextBox>
               </div>
             </div>
             <div class="row">
-              <div class="col-xs-12">
+              <div class="col-xs-12 mt-3 mb-1">
                 <div id="divMessageArea"
                   runat="server"
                   visible="false">
@@ -79,7 +79,7 @@
         </div>
         <div class="panel-footer">
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-12 mt-2 mb-2">
                <asp:button id="submitButton" CssClass="btn btn-primary" runat="server" Text="Save" OnClick="submitButton_Click"></asp:button>&nbsp;                    
                <asp:button id="returnButton" CssClass="btn btn-primary" runat="server" Text="Home" OnClick="returnButton_Click"></asp:button>
              </div>

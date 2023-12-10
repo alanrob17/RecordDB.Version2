@@ -71,7 +71,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Maintenance
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu rounded-3 mx-0 border-0 shadow w-220px" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="/AddArtist">Add New Artist</a>
                                 <a class="dropdown-item" href="/EditArtist">Edit Artist</a>
                                 <a class="dropdown-item" href="/DeleteArtist">Delete Artist</a>

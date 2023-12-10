@@ -13,8 +13,8 @@ namespace RecordDB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var dtnow = DateTime.Now;
-            dateLabel.Text = dtnow.ToLongDateString();
+            //var dtnow = DateTime.Now;
+            //dateLabel.Text = dtnow.ToLongDateString();
         }
 
         protected void submitButton_Click(object sender, EventArgs e)
