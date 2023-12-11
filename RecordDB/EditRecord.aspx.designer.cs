@@ -69,15 +69,6 @@ namespace RecordDB
         protected global::System.Web.UI.WebControls.DropDownList fieldDropDownList;
 
         /// <summary>
-        /// recordedTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox recordedTextBox;
-
-        /// <summary>
         /// labelTextBox control.
         /// </summary>
         /// <remarks>
@@ -85,15 +76,6 @@ namespace RecordDB
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox labelTextBox;
-
-        /// <summary>
-        /// pressingDropDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList pressingDropDownList;
 
         /// <summary>
         /// ratingDropDownList control.
@@ -105,15 +87,6 @@ namespace RecordDB
         protected global::System.Web.UI.WebControls.DropDownList ratingDropDownList;
 
         /// <summary>
-        /// discsDropDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList discsDropDownList;
-
-        /// <summary>
         /// mediaDropDownList control.
         /// </summary>
         /// <remarks>
@@ -121,6 +94,33 @@ namespace RecordDB
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList mediaDropDownList;
+
+        /// <summary>
+        /// recordedTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox recordedTextBox;
+
+        /// <summary>
+        /// pressingDropDownList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList pressingDropDownList;
+
+        /// <summary>
+        /// discsDropDownList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList discsDropDownList;
 
         /// <summary>
         /// boughtTextBox control.

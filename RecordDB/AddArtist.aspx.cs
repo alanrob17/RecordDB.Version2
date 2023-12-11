@@ -24,28 +24,39 @@ namespace RecordDB
 
         private async Task SubmitAsync()
         {
-            var artistData = new ArtistData();
-            var artist = new Artist
+            var artistId = 0;
+            var biography = string.Empty;
+            if (!string.IsNullOrEmpty(this.lastNameTextBox.Text))
             {
-                ArtistId = 0,
-                FirstName = this.firstNameTextBox.Text,
-                LastName = this.lastNameTextBox.Text,
-                Biography = this.biographyTextBox.Text
-            };
 
-            var artistId = await artistData.InsertAsync(artist.ArtistId, artist.FirstName, artist.LastName, artist.Biography);
+                var artistData = new ArtistData();
+                var artist = new Artist
+                {
+                    ArtistId = 0,
+                    FirstName = this.firstNameTextBox.Text,
+                    LastName = this.lastNameTextBox.Text,
+                    Biography = this.biographyTextBox.Text
+                };
+
+                artistId = await artistData.InsertAsync(artist.ArtistId, artist.FirstName, artist.LastName, artist.Biography);
+                biography = artist.Biography;
+            }
+            else
+            {
+                messageLabel.Text = "ERROR: No Last Name added!<br/>";
+            }
 
             divMessageArea.Visible = true;
 
             // Show the new artist id
             if (artistId == 0)
             {
-                messageLabel.Text = "ERROR: Artist was not added! " + artistId;
+                messageLabel.Text += "ERROR: Artist was not added! " + artistId;
             }
             else
             {
                 messageLabel.Text = "Artist Id: " + artistId + "<br/>";
-                messageLabel.Text += "<strong>" + artist.Biography + "</strong>";
+                messageLabel.Text += "<strong>" + biography + "</strong>";
             }
         }
 

@@ -69,31 +69,13 @@ namespace RecordDB
         protected global::System.Web.UI.WebControls.Label fieldLabel;
 
         /// <summary>
-        /// recordedLabel control.
+        /// recordLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label recordedLabel;
-
-        /// <summary>
-        /// label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox label;
-
-        /// <summary>
-        /// pressingLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label pressingLabel;
+        protected global::System.Web.UI.WebControls.Label recordLabel;
 
         /// <summary>
         /// ratingLabel control.
@@ -105,15 +87,6 @@ namespace RecordDB
         protected global::System.Web.UI.WebControls.Label ratingLabel;
 
         /// <summary>
-        /// discsLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label discsLabel;
-
-        /// <summary>
         /// mediaLabel control.
         /// </summary>
         /// <remarks>
@@ -121,6 +94,33 @@ namespace RecordDB
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label mediaLabel;
+
+        /// <summary>
+        /// recordedLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label recordedLabel;
+
+        /// <summary>
+        /// pressingLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label pressingLabel;
+
+        /// <summary>
+        /// discsLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label discsLabel;
 
         /// <summary>
         /// boughtLabel control.

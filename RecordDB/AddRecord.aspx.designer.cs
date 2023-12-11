@@ -42,15 +42,6 @@ namespace RecordDB
         protected global::System.Web.UI.WebControls.DropDownList fieldDropDownList;
 
         /// <summary>
-        /// recordedTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox recordedTextBox;
-
-        /// <summary>
         /// labelTextBox control.
         /// </summary>
         /// <remarks>
@@ -58,15 +49,6 @@ namespace RecordDB
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox labelTextBox;
-
-        /// <summary>
-        /// pressingDropDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList pressingDropDownList;
 
         /// <summary>
         /// ratingDropDownList control.
@@ -78,15 +60,6 @@ namespace RecordDB
         protected global::System.Web.UI.WebControls.DropDownList ratingDropDownList;
 
         /// <summary>
-        /// discsDropDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList discsDropDownList;
-
-        /// <summary>
         /// mediaDropDownList control.
         /// </summary>
         /// <remarks>
@@ -94,6 +67,33 @@ namespace RecordDB
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList mediaDropDownList;
+
+        /// <summary>
+        /// recordedTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox recordedTextBox;
+
+        /// <summary>
+        /// pressingDropDownList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList pressingDropDownList;
+
+        /// <summary>
+        /// discsDropDownList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList discsDropDownList;
 
         /// <summary>
         /// boughtTextBox control.
@@ -150,22 +150,13 @@ namespace RecordDB
         protected global::System.Web.UI.WebControls.Label messageLabel;
 
         /// <summary>
-        /// submitButton control.
+        /// reviewLiteral control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitButton;
-
-        /// <summary>
-        /// returnButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button returnButton;
+        protected global::System.Web.UI.WebControls.Button reviewLiteral;
 
         /// <summary>
         /// returnValueLabel control.
@@ -174,15 +165,6 @@ namespace RecordDB
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label returnValueLabel;
-
-        /// <summary>
-        /// reviewLiteral control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal reviewLiteral;
+        protected global::System.Web.UI.WebControls.Button returnValueLabel;
     }
 }

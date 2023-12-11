@@ -72,13 +72,13 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Maintenance
                             </a>
                             <div class="dropdown-menu rounded-3 mx-0 border-0 shadow w-220px" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/AddArtist">Add New Artist</a>
-                                <a class="dropdown-item" href="/EditArtist">Edit Artist</a>
-                                <a class="dropdown-item" href="/DeleteArtist">Delete Artist</a>
+                                <a class="dropdown-item" href="/AddArtist"><span class="d-inline-block bg-success rounded-circle p-1"></span> Add New Artist</a>
+                                <a class="dropdown-item" href="/EditArtist"><span class="d-inline-block bg-warning rounded-circle p-1"></span> Edit Artist</a>
+                                <a class="dropdown-item" href="/DeleteArtist"><span class="d-inline-block bg-danger rounded-circle p-1"></span> Delete Artist</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="/AddRecord">Add New Record</a>
-                                <a class="dropdown-item" href="/EditRecord">Edit Record</a>
-                                <a class="dropdown-item" href="/DeleteRecord">Delete Record</a>
+                                <a class="dropdown-item" href="/AddRecord"><span class="d-inline-block bg-success rounded-circle p-1"></span> Add New Record</a>
+                                <a class="dropdown-item" href="/EditRecord"><span class="d-inline-block bg-warning rounded-circle p-1"></span> Edit Record</a>
+                                <a class="dropdown-item" href="/DeleteRecord"><span class="d-inline-block bg-danger rounded-circle p-1"></span> Delete Record</a>
                             </div>
                         </li>
                         <li>

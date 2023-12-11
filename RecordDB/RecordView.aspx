@@ -21,7 +21,7 @@
                            <td colspan="2"><h3 class="headerLabel"><%# Eval("Name ") %></h3><br/></td>
                        </tr>
                        <tr>
-                           <td colspan="2"><input type="button" class="btn btn-primary" id="biographyButton" value="Biography:" />
+                           <td colspan="2"><input type="button" class="btn btn-primary rounded-3" id="biographyButton" value="Biography:" />
                                 <div id="biography"><br/><%=ShowBiography() %></div><br/>
                                 <br/>
                            </td>
@@ -46,16 +46,16 @@
                            <td><p><strong>Cost: </strong><%# Eval("Cost", "{0:c}") %></p><br/></td>
                        </tr> 
                        <tr>
-                           <td colspan="2"><input type="button" class="btn btn-primary" id="showButton" value="Review:" />
+                           <td colspan="2"><input type="button" class="btn btn-primary rounded-3" id="showButton" value="Review:" />
                                 <div id="review"><%# "<br/>" + Eval("Review") %></div><br/>
                                 <br/>
                            </td>
                        </tr>
                        <tr>
                            <td colspan="2">
-                       <asp:Button ID="editButton" CssClass="btn btn-primary" OnClick="editButton_Click" runat="server" Text="Edit" />&nbsp;&nbsp;&nbsp;
+                       <asp:Button ID="editButton" CssClass="btn btn-primary rounded-3" OnClick="editButton_Click" runat="server" Text="Edit" />&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="homeButton"
-                            CssClass="btn btn-primary" 
+                            CssClass="btn btn-primary rounded-3" 
                             runat="server" 
                             Text="Home"
                             OnClick="homeButton_Click" />  

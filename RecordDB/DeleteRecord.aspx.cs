@@ -88,7 +88,7 @@ namespace RecordDB
             nameLabel.Text = record.Name;
             fieldLabel.Text = record.Field;
             recordedLabel.Text = record.Recorded.ToString(CultureInfo.InvariantCulture);
-            label.Text = record.Label;
+            recordLabel.Text = record.Label;
             pressingLabel.Text = record.Pressing;
             ratingLabel.Text = record.Rating;
             discsLabel.Text = record.Discs.ToString(CultureInfo.InvariantCulture);
