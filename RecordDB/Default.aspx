@@ -14,11 +14,11 @@
     <div class="row">
         <div class="col-xs-10 col-md-6 center-block">
             <div class="table-responsive">
-                <table class="table table-hover table-bordered">
+                <table class="table table-hover table-bordered colour-header">
                     <thead>
                         <tr>
-                            <th>Options</th>
-                            <th>Description</th>
+                            <th class="colour-header">Options</th>
+                            <th class="colour-header">Description</th>
                         </tr>
                     </thead>
                     <tbody>
