@@ -22,7 +22,7 @@
             <div class="input-group col-md-10">
               <asp:TextBox ID="firstNameTextBox" runat="server"
                 TextMode="SingleLine"
-                CssClass="form-control mt-1 mb-3"
+                CssClass="form-control rounded-3 mt-1 mb-3"
                 autofocus="autofocus"
                 placeholder="First name"
                 title="First name"></asp:TextBox>
@@ -33,7 +33,7 @@
             <div class="input-group col-md-10">
               <asp:TextBox ID="lastNameTextBox" runat="server"
                 TextMode="SingleLine"
-                CssClass="form-control mt-1 mb-1"
+                CssClass="form-control rounded-3 mt-1 mb-1"
                 required="required"
                 placeholder="Last name"
                 title="Last name"></asp:TextBox>
@@ -56,7 +56,7 @@
         <div class="panel-footer">
           <asp:Button ID="searchButton" runat="server"
             Text="Submit"
-            CssClass="btn btn-primary mt-1 mb-5"
+            CssClass="btn btn-primary rounded-3 mt-1 mb-5"
             title="Submit"
             OnClick="searchButton_Click" />
         </div>
