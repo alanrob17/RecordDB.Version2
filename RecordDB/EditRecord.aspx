@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" Async="true" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EditRecord.aspx.cs" Inherits="RecordDB.EditRecord" ValidateRequest="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<div class="col-md-7 center-block">
+<div class="col-md-6 center-block">
 <div class="container mt-5 col-md-5">
     <h3 class="headerLabel mb-4">Update Record</h3>
         <div class="row">
@@ -105,7 +105,7 @@
                         <asp:TextBox ID="reviewTextBox" runat="server"
                     TextMode="MultiLine"
                   CssClass="form-control rounded-3"
-                  title="Review" placeholder="Review"></asp:TextBox>
+                  title="Review" Height="260px" placeholder="Review"></asp:TextBox>
                     </div>
                 </div>
                 <div class="mb-3">

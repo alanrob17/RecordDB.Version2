@@ -9,7 +9,7 @@
       <p> <span id="date"></span></p> 
     </div>
   </div>--%>
-<div class="col-md-7 center-block">
+<div class="col-md-6 center-block">
 <div class="container mt-5 col-md-5">
     <h3 class="headerLabel mb-4">Add Artist</h3>
         <div class="row">

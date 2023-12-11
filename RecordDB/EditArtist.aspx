@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" Async="true" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EditArtist.aspx.cs" Inherits="RecordDB.EditArtist"  ValidateRequest="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<div class="col-md-7 center-block">
+<div class="col-md-6 center-block">
 <div class="container mt-5 col-md-5">
     <h3 class="headerLabel mb-4">Update Artist</h3>
         <div class="row">

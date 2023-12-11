@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" Async="true" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DeleteArtist.aspx.cs" Inherits="RecordDB.DeleteArtist" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<div class="col-md-7 center-block">
+<div class="col-md-6 center-block">
 <div class="container mt-5 col-md-5">
     <h3 class="headerLabel mb-4">Delete Artist</h3>
         <div class="row">
