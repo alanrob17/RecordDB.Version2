@@ -10,7 +10,7 @@
         </div>
         </div>
     <div id="main" role="main" class="mainArea">
-    <h3 class="headerLabel" align="center"><asp:Label ID="pageHeaderLabel" runat="server"></asp:Label></h3>
+    <h4 class="headerLabel mt-3" align="center"><asp:Label ID="pageHeaderLabel" runat="server"></asp:Label></h4>
         <div class="table-responsive">
          <asp:GridView ID="totalsGridView" Width="25%" HorizontalAlign="Center" CssClass="table table-striped table-bordered" AutoGenerateColumns="False" AllowPaging="True" PageSize="30"  DataSourceID="totalsDataSource" runat="server">
             <Columns>

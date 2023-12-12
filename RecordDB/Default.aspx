@@ -106,7 +106,7 @@
                         </tr>
                         <tr>
                             <td><a href="GetArtist/1111">View Four Star</a></td>
-                            <td>View all Albums with a four star rating.
+                            <td>View all Albums with an indespensible rating.
                             </td>
                         </tr>
                         <tr>

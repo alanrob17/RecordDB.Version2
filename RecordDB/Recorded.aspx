@@ -55,7 +55,7 @@
         <div class="panel-footer clearfix">
           <asp:Button ID="submitButton" runat="server"
             Text="Submit"
-            CssClass="btn btn-primary mt-2"
+            CssClass="btn btn-primary rounded-3 mt-2"
             title="Submit"
             OnClick="submitButton_Click" />
         </div>
