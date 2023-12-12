@@ -81,8 +81,14 @@
                                 <a class="dropdown-item" href="/DeleteRecord"><span class="d-inline-block bg-danger rounded-circle p-1"></span> Delete Record</a>
                             </div>
                         </li>
-                        <li>
-                            <a class="nav-link" href="/Statistics">Statistics</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Statistics
+                            </a>
+                            <div class="dropdown-menu rounded-3 mx-0 border-0 shadow w-220px" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/TotalCosts"><span class="d-inline-block bg-warning rounded-circle p-1"></span> Total Artist Cost</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/Statistics"><span class="d-inline-block bg-success rounded-circle p-1"></span> Statistics</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
