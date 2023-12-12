@@ -18,6 +18,7 @@ namespace RecordDB
 
             if (!Page.IsPostBack)
             {
+                recordPanel.Visible = false;
                 RegisterAsyncTask(new PageAsyncTask(LoadDataAsync));
             }
         }
@@ -102,6 +103,7 @@ namespace RecordDB
                 // this.ClearRecord();
 
                 messageLabel.Text = "Artist Id: " + artistId;
+                recordPanel.Visible = true;
             }
         }
 

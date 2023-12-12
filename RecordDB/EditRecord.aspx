@@ -108,7 +108,7 @@
                   title="Review" Height="260px" placeholder="Review"></asp:TextBox>
                     </div>
                 </div>
-                <div class="mb-3">
+                <div class="mt-3 mb-3">
                 <div id="messageAreaDiv"
                   runat="server"
                   visible="false">

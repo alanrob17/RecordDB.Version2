@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="RecordDB._Default" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <style>
+        th, td {
+          Font-Size:Larger;
+        }
+    </style>
     <div class="row">
         <div class="col-xs-10 col-md-6 center-block">
             <h2 class="headerLabel">RecordDB Management System</h2>

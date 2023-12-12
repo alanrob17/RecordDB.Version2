@@ -12,7 +12,7 @@
    <div class="row">
     <div class="col-xs-12 col-md-6 center-block">
 
-            <asp:FormView ID="recordFormView" Width="700px" Font-Size="Larger"  DataSourceID="recordObjectDataSource" DataKeyNames="RecordId" AllowPaging="false" runat="server">
+            <asp:FormView ID="recordFormView" Width="700px" Font-Size="Larger" DataSourceID="recordObjectDataSource" DataKeyNames="RecordId" AllowPaging="false" runat="server">
                    <ItemTemplate>
                        <tr>
                            <td colspan="2"><h2><%# Eval("ArtistName") %></h2><br/></td>
