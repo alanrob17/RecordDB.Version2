@@ -12,7 +12,7 @@
    <div class="row">
     <div class="col-xs-12 col-md-6 center-block">
 
-            <asp:FormView ID="recordFormView"  DataSourceID="recordObjectDataSource" DataKeyNames="RecordId" AllowPaging="false" runat="server">
+            <asp:FormView ID="recordFormView" Width="700px" Font-Size="Larger"  DataSourceID="recordObjectDataSource" DataKeyNames="RecordId" AllowPaging="false" runat="server">
                    <ItemTemplate>
                        <tr>
                            <td colspan="2"><h2><%# Eval("ArtistName") %></h2><br/></td>
@@ -21,7 +21,7 @@
                            <td colspan="2"><h3 class="headerLabel"><%# Eval("Name ") %></h3><br/></td>
                        </tr>
                        <tr>
-                           <td colspan="2"><input type="button" class="btn btn-primary rounded-3" id="biographyButton" value="Biography:" />
+                           <td colspan="2"><input type="button" class="btn btn-sm btn-outline-primary rounded-3" id="biographyButton" value="Biography:" />
                                 <div id="biography"><br/><%=ShowBiography() %></div><br/>
                                 <br/>
                            </td>
@@ -46,7 +46,7 @@
                            <td><p><strong>Cost: </strong><%# Eval("Cost", "{0:c}") %></p><br/></td>
                        </tr> 
                        <tr>
-                           <td colspan="2"><input type="button" class="btn btn-primary rounded-3" id="showButton" value="Review:" />
+                           <td colspan="2"><input type="button" class="btn btn-sm btn-outline-primary rounded-3" id="showButton" value="Review:" />
                                 <div id="review"><%# "<br/>" + Eval("Review") %></div><br/>
                                 <br/>
                            </td>
