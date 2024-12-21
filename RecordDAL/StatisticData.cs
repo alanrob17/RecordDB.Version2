@@ -200,7 +200,7 @@ namespace RecordDAL
             {
                 // query for number of Four Star Records
                 int? fourStarDisks = null;
-                var getValue = new SqlCommand("select count(rating) from record where Rating = '****'", cn);
+                var getValue = new SqlCommand("select count(*) from record where Rating = '****'", cn);
 
                 await cn.OpenAsync();
 
@@ -218,7 +218,7 @@ namespace RecordDAL
             {
                 // query for number of Three Star Records
                 int? threeStarDisks = null;
-                var getValue = new SqlCommand("select count(rating) from record where Rating = '***'", cn);
+                var getValue = new SqlCommand("select count(*) from record where Rating = '***'", cn);
 
                 await cn.OpenAsync();
 
@@ -236,7 +236,7 @@ namespace RecordDAL
             {
                 // query for number of Two Star Records
                 int? twoStarDisks = null;
-                var getValue = new SqlCommand("select count(rating) from record where Rating = '**'", cn);
+                var getValue = new SqlCommand("select count(*) from record where Rating = '**'", cn);
 
                 await cn.OpenAsync();
 
@@ -254,7 +254,7 @@ namespace RecordDAL
             {
                 // query for number of One Star Records
                 int? oneStarDisks = null;
-                var getValue = new SqlCommand("select count(rating) from record where Rating = '*'", cn);
+                var getValue = new SqlCommand("select count(*) from record where Rating = '*'", cn);
 
                 await cn.OpenAsync();
 

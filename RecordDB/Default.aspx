@@ -212,7 +212,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <h4 id="database">Connected to local SQL Server database.</h4>
+                <h4 id="database">Connected to Azure Cloud SQL Server database.</h4>
                 <asp:Label ID="yearLabel" runat="server"></asp:Label><br />
                 <br />
             </div>
